@@ -1,17 +1,22 @@
 package Parkhaus;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
+import javax.swing.JLabel;
 public class EtageAuswahl implements MouseListener{
 	private Parkhaus prk;
 	private int etage;
+	private JLabel preis;
 	
-	public EtageAuswahl(Parkhaus prk,int etage){
+	public EtageAuswahl(Parkhaus prk,int etage,JLabel preis){
 		this.prk=prk;
 		this.etage=etage;
+		this.preis=preis;
 	}
 
 	public void mouseClicked(MouseEvent arg0) {
 		prk.changeEtage(etage);
+		preis.setText("Preis: " + etage*10+"€/h");
 		
 	}
 

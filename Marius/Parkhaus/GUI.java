@@ -12,7 +12,7 @@ public class GUI extends JFrame{
 	{
 		super();
 		setSize(680,400);
-		prk=new Parkhaus();
+		prk=new Parkhaus(this);
 		setVisible(true);
 		ut=new Utility(prk);
 		setLayout(new BorderLayout());

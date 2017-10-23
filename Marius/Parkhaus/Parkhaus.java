@@ -9,34 +9,33 @@ import javax.swing.JPanel;
 public class Parkhaus extends JPanel{
 	
    private Etage[] etagen;
-   
+   private GUI gui;
    private Utility ut;
 	
-	public Parkhaus()
+	public Parkhaus(GUI gui)
 	{
 		super();
-		
-		
-		setLayout(new GridLayout(0,4));
+		setLayout(new GridLayout(0,1));
+		this.gui=gui;
 		setVisible(true);
 		etagen= new Etage[4];
 		for(int i=0;i<4;i++){
 			etagen[i]=new Etage(i);
-			add(etagen[i]);
+			
 		}
+		add(etagen[0]);
+		
+		repaint();
+		
 		
 		
 	}
 	
 	public void changeEtage(int i){
-		for(int j=0;j<4;j++){
-			if(j!=i){
-				this.remove(etagen[j]);
-			}
-		}
-		repaint();
+		remove(this.getComponents()[0]);
 		add(etagen[i]);
 		repaint();
-	}
+		gui.pack();
 
+	}
 }

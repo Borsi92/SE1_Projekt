@@ -1,5 +1,7 @@
 package Parkhaus;
 
+import java.awt.Dimension;
+
 import javax.swing.JButton;
 
 public class Parkplatz extends JButton{
@@ -10,6 +12,7 @@ public class Parkplatz extends JButton{
 	}
 	public Parkplatz(String s){
 		super(s);
+		this.setPreferredSize(new Dimension(200,100));
 	}
 
 }
