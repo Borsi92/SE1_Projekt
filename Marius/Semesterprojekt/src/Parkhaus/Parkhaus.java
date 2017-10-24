@@ -24,9 +24,7 @@ public class Parkhaus extends JPanel{
 			
 		}
 		add(etagen[0]);
-		
-		repaint();
-		
+		//gui.pack();
 		
 		
 		
@@ -36,7 +34,7 @@ public class Parkhaus extends JPanel{
 		remove(this.getComponents()[0]);
 		add(etagen[i]);
 		repaint();
-		gui.pack();
+		//gui.pack();
 
 	}
 }

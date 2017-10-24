@@ -1,5 +1,6 @@
 package Parkhaus;
 
+import java.awt.Dimension;
 import java.awt.GridLayout;
 
 import javax.swing.ImageIcon;
@@ -23,6 +24,7 @@ public class Etage extends JPanel{
 			else{
 				JLabel b=new JLabel();
 				b.setIcon(new ImageIcon("strasse.jpg"));
+				b.setPreferredSize(new Dimension(180,100));
 				
 				b.repaint();
 				add(b);

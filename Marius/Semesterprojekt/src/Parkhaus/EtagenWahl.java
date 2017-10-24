@@ -22,7 +22,7 @@ public class EtagenWahl extends JPanel{
 		etagenw=new JButton[4];
 		for(int i=0;i<4;i++){
 			etagenw[i]=new JButton("Etage: "+i);
-			etagenw[i].setPreferredSize(new Dimension(100,100));
+			etagenw[i].setPreferredSize(new Dimension(95,70));
 			etagenw[i].addMouseListener(new EtageAuswahl(prk,i,preis));
 			add(etagenw[i]);
 		}

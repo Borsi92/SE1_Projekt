@@ -16,7 +16,7 @@ public class EtageAuswahl implements MouseListener{
 
 	public void mouseClicked(MouseEvent arg0) {
 		prk.changeEtage(etage);
-		preis.setText("Preis: " + (etage+1)*10+"\n"+"€/h");
+		preis.setText("Preis: " + (etage+1)*10+"€/h");
 		
 	}
 
