@@ -1,6 +1,7 @@
 package Parkhaus;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -16,6 +17,7 @@ public class Utility extends JPanel{
 		this.prk=prk;
 		setLayout(new BorderLayout());
 		preis=new JLabel("Etage Waehlen!");
+		preis.setPreferredSize(new Dimension(140,100));
 		ew=new EtagenWahl(prk,preis);
 		add(preis,BorderLayout.EAST);
 		add(ew,BorderLayout.CENTER);

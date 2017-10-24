@@ -20,12 +20,13 @@ public class Parkhaus extends JPanel{
 		setVisible(true);
 		etagen= new Etage[4];
 		for(int i=0;i<4;i++){
-			etagen[i]=new Etage(i);
+			etagen[i]=new Etage(i,gui);
 			
 		}
 		add(etagen[0]);
 		
 		repaint();
+		
 		
 		
 		
